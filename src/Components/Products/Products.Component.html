@@ -1,0 +1,5 @@
+<div class="productItem">
+    <div *ngFor="let product of products; index as i"[ngStyle]="{'background-color': product.color}">
+        <app-product [name]="products[i].name" (click)="addItemInCart(products[i])"></app-product>
+    </div>
+</div>

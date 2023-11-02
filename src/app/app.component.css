@@ -1,0 +1,5 @@
+.leftCart{
+    width: 50%;
+    flex-wrap: wrap;
+    display: flex;
+}

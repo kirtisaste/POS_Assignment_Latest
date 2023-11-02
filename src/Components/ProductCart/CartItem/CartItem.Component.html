@@ -1,0 +1,29 @@
+<div class="product_cart">
+    <div class="product_cartlist">
+        <a></a>
+        <a>PRODUCT</a>
+        <a>PRICE</a>
+        <a>QUANTITY</a>
+        <a>TOTAL</a>
+    </div>
+    
+    <div>
+        <div *ngIf="cartItems.length == 0" class="product_cartlists">
+            <h1>No product to show</h1>
+        </div>
+      
+        <div *ngIf="cartItems.length > 0" >
+            <div *ngFor = "let item of cartItems; index as i;" class="product_cartlists">
+                <button (click)="deleteItem(i)">X</button>
+                <a>{{ cartItems[i].Product }}</a>
+                <a>{{ cartItems[i].Price }}</a>
+                <a>
+                    <button (click)="removeItem(i)">-</button>&nbsp;
+                    <label>{{ cartItems[i].Quantity }}</label>&nbsp;
+                    <button (click)="addItem(i)">+</button>
+                </a>
+                <a>{{ cartItems[i].Total }}</a>
+            </div>
+    </div>
+    </div>
+    </div>

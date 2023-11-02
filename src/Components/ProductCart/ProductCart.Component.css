@@ -1,0 +1,24 @@
+.product_main{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart-button{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+  bottom: 6px;
+  width: 50%;
+}
+.cancel_sale{
+    background-color: red;
+    border: 1px red;
+    padding: 10px;
+    color: white;
+}
+.process_sale{
+    background-color: green;
+    border: 1px red;
+    padding: 10px;
+    color: white;
+}

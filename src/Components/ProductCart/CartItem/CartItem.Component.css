@@ -1,0 +1,13 @@
+.product_cartlist{
+    justify-content: space-around;
+    display: flex;
+}
+
+.product_cartlists{
+    justify-content: space-around;
+    display: flex;
+    background-color: white;
+    border: 0.5px solid rgb(228, 222, 222);
+    margin-top: 12px;
+    
+}
